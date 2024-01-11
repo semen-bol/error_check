@@ -1,4 +1,4 @@
-async function chechError(num) { // example num = 0
+async function checkError(num) { // example num = 0
   let error = {
     "0": "Supported only GET method",
     "3": "Not found",
