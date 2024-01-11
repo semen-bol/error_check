@@ -4,5 +4,5 @@
 ## Начало 
 Как начать? Скопировать код из JS файла и использовать, пример ниже
 ```
-chechError(0) // 0: Supported only GET method
+checkError(0) // 0: Supported only GET method
 ```
