@@ -36,6 +36,6 @@ let par = "" //params
 useNemoApi("utils.getServerTime", tok, par) // params можно не указавать в некоторых методах
 ```
 # Связь со мной
-vk.com/nemolayn
+Vk: https://vk.com/nemolayn
 
-Bot: vk.com/nemocm
+Bot: http://vk.com/nemocm
