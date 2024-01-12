@@ -10,6 +10,32 @@ checkError(0) // 0: Supported only GET method
 ## Приминение в практике
 Пример использования модуля Fetch: ```(npm i node-fetch)```
 ```
-//пример скоро будет добавлен
-```
+async function useNemoApi(method, token, params) {
 
+var fetch = require("node-fetch")
+if(params){
+var url = "https://api.nemo-bot.ru/m/" + method + "?" + token + "&" + params
+} else {
+var url = "https://api.nemo-bot.ru/m/" + method + "?" + token
+}
+
+fetch(url)
+.then(gets => gets.json())
+.then(res => {
+
+if(res.error){
+let r = res.error; let check = checkError(r.error_code); return check;
+})
+return res.response;
+}
+```
+Пример использования функции:
+```
+let tok = "" //token
+let par = "" //params
+useNemoApi("utils.getServerTime", tok, par) // params можно не указавать в некоторых методах
+```
+# Связь со мной
+vk.com/nemolayn
+
+Bot: vk.com/nemocm
