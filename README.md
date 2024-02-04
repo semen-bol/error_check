@@ -14,9 +14,9 @@ async function useNemoApi(method, token, params) {
 
 var fetch = require("node-fetch")
 if(params){
-var url = "https://api.nemo-bot.ru/m/" + method + "?" + token + "&" + params
+var url = "https://api.nemo-bot.site/m/" + method + "?" + token + "&" + params
 } else {
-var url = "https://api.nemo-bot.ru/m/" + method + "?" + token
+var url = "https://api.nemo-bot.site/m/" + method + "?" + token
 }
 
 fetch(url)
