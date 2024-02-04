@@ -7,6 +7,7 @@ async function checkError(num) { // example num = 0
     "6": "User authorization falied: no access_token passed",
     "26": "Limit reached",
     "100": "One of parametr is invalid",
+    "429": "Limit expired",
   } // Набор возможных ошибок
   let find = error[num] // Ищем если есть ошибка
   if(!find) return "Unsupported error" // Если такая ошибка не обрабатывается
